@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Salesforce Treasures</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            color: #59607E;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .header p {
+            color: #59607E;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(89, 96, 126, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(89, 96, 126, 0.25);
+        }
+
+        .card-header {
+            background: #59607E;
+            color: white;
+            padding: 40px 30px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .card-header p {
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .vision-card {
+            grid-column: span 1;
+        }
+
+        .vision-content {
+            padding: 30px;
+        }
+
+        .vision-section {
+            margin-bottom: 25px;
+        }
+
+        .vision-section h3 {
+            color: #59607E;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .vision-section p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+
+        .about-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 2px solid #59607E;
+            color: #59607E;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .about-btn:hover {
+            background: #59607E;
+            color: white;
+        }
+
+        .explore-btn {
+            display: inline-block;
+            background: #59607E;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(89, 96, 126, 0.3);
+        }
+
+        .explore-btn:hover {
+            background: #494f6b;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(89, 96, 126, 0.4);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card-header {
+                min-height: 160px;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Why Salesforce Treasures?</h1>
+            <p>Unlocking Salesforce Excellence Through Expert Guidance</p>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Vision & Mission Card -->
+            <div class="card vision-card">
+                <div class="card-header">
+                    <h2>Vision & Mission</h2>
+                    <p><strong>Vision:</strong> Empowering businesses through Salesforce mastery and innovation</p>
+                </div>
+                <div class="vision-content">
+                    <div class="vision-section">
+                        <h3>Mission:</h3>
+                        <p>At Salesforce Treasures, our mission is to bridge the gap between Salesforce potential and business success through comprehensive training and expert consulting.</p>
+                    </div>
+                    <div class="vision-section">
+                        <p>• Personalized guidance tailored to your Salesforce journey</p>
+                        <p>• Expert-led training with real-world scenarios</p>
+                        <p>• Helping professionals achieve their Salesforce certification goals</p>
+                    </div>
+                    <a href="#" class="about-btn">About Us</a>
+                </div>
+            </div>
+
+            <!-- Expert Training Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Expert-Led Training</h2>
+                    <p>Learn from certified Salesforce professionals with years of hands-on experience in real-world implementations.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop" alt="Team Training" class="card-image">
+            </div>
+
+            <!-- Certification Support Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Certification Support</h2>
+                    <p>Comprehensive preparation materials and guidance to help you ace your Salesforce certification exams.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop" alt="Study Materials" class="card-image">
+            </div>
+
+            <!-- Live Project Experience Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Live Project Experience</h2>
+                    <p>Gain practical experience through real-world Salesforce projects and implementations.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop" alt="Project Work" class="card-image">
+            </div>
+
+            <!-- Career Guidance Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Career Guidance</h2>
+                    <p>Personalized career counseling to help you navigate the Salesforce ecosystem and achieve your professional goals.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop" alt="Career Mentoring" class="card-image">
+            </div>
+
+            <!-- Community Support Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Community & Networking</h2>
+                    <p>Join a vibrant community of Salesforce professionals and expand your network in the ecosystem.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Community" class="card-image">
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <a href="#" class="explore-btn">Explore Our Courses</a>
+        </div>
+    </div>
+</body>
+</html>
